@@ -1,13 +1,13 @@
 import React from "react";
-import "./app.css";
 import { ChakraProvider } from "@chakra-ui/react";
 import { Layout } from "../layout";
+import { ConnectButton } from "../connect-button";
 
 export const App: React.FC = () => {
   return (
     <ChakraProvider>
       <Layout>
-        <p style={{ color: "white" }}>Hello, world!</p>
+        <ConnectButton />
       </Layout>
     </ChakraProvider>
   );
