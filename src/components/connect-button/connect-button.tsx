@@ -3,7 +3,11 @@ import { useEthers, useEtherBalance } from "@usedapp/core";
 import { formatEther } from "@ethersproject/units";
 import { Identicon } from "../identicon";
 
-export const ConnectButton: React.FC = () => {
+type Props = {
+  handleOpenModal: any;
+};
+
+export const ConnectButton: React.FC<Props> = ({ handleOpenModal }) => {
   const { activateBrowserWallet, account } = useEthers();
   const etherBalance = useEtherBalance(account);
 
@@ -25,6 +29,7 @@ export const ConnectButton: React.FC = () => {
         </Text>
       </Box>
       <Button
+        onClick={handleOpenModal}
         bg="gray.800"
         border="1px solid transparent"
         _hover={{
