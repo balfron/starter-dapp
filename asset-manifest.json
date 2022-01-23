@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.js": "/starter-dapp/static/js/main.bde44378.js",
+    "main.js": "/starter-dapp/static/js/main.13aeff48.js",
     "index.html": "/starter-dapp/index.html",
-    "main.bde44378.js.map": "/starter-dapp/static/js/main.bde44378.js.map"
+    "main.13aeff48.js.map": "/starter-dapp/static/js/main.13aeff48.js.map"
   },
   "entrypoints": [
-    "static/js/main.bde44378.js"
+    "static/js/main.13aeff48.js"
   ]
 }
