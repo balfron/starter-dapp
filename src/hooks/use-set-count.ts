@@ -8,7 +8,7 @@ const simpleContractInterface = new ethers.utils.Interface(simpleContractAbi);
 
 const contract = new Contract(simpleContractAddress, simpleContractInterface);
 
-export function useIncrement() {
-  const { state, send } = useContractFunction(contract, "incrementCount", {});
+export function useSetCount() {
+  const { state, send } = useContractFunction(contract, "setCount", {});
   return { state, send };
 }
