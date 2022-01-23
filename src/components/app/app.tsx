@@ -3,6 +3,7 @@ import { ChakraProvider, useDisclosure } from "@chakra-ui/react";
 import { Layout } from "../layout";
 import { ConnectButton } from "../connect-button";
 import { AccountModal } from "../account-modal";
+import { Count } from "../count";
 
 export const App: React.FC = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
@@ -11,6 +12,7 @@ export const App: React.FC = () => {
       <Layout>
         <ConnectButton handleOpenModal={onOpen} />
         <AccountModal isOpen={isOpen} onClose={onClose} />
+        <Count />
       </Layout>
     </ChakraProvider>
   );
